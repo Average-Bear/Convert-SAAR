@@ -1,9 +1,9 @@
 <#
 .SYNOPSIS
-    Parse SAAR form(s) 2875 for user account creation data, using iTextSharp library.
+    Parse DD Form 2875 for user account creation data, using iTextSharp library.
 
 .DESCRIPTION
-    Parse SAAR form(s) 2875 for user account creation data, using iTextSharp library.
+    Parse DD Form 2875 for user account creation data, using iTextSharp library.
 
 .NOTES
     Author: JBear
