@@ -39,7 +39,7 @@ foreach($File in $Files) {
     $Name = $Data.Name.Split(',').Split(" ") | where {$_ -ne ''}
 
     #Verify user signature
-    $UserSignature = $PDF.AcroFields.VerifySignature("usersign")
+    $UserSignature = $PDF.AcroFields.VerifySignature("supvsign")
 
     [PSCUstomObject] @{
     
@@ -57,17 +57,7 @@ foreach($File in $Files) {
         
         if(!([String]::IsNullOrWhiteSpace($UserSignature.SignName))) {
             
-            #Retrieve 10 consecutive numbers from string (Signature EDI)
-            if($UserSignature.SignName -Match "([0-9]{10})"){
-                
-                $Matches[1].Trim()
-            } 
-                
-            #If SAAR form is not signed with CAC
-            else {
-                
-                $Data.UserID.Replace('EDIPI','').Replace(' ','').Replace('#','').Replace(':','').Trim()
-            }
+            $UserSignature.SignName.Split(".") | Select -Last 1
         }
 
         #If SAAR form is not signed by user
