@@ -79,4 +79,6 @@ foreach($File in $Files) {
         #User job title
         JobTitle = $Data.ReqTitle.Trim()
     }
+    
+    $PDF.Close()
 }
