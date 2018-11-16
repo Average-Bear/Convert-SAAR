@@ -40,7 +40,7 @@ foreach($File in $Files) {
     $Name = $Data.Name.Split(',').Split(" ") | where {$_ -ne ''}
 
     #Verify user signature
-    $UserSignature = $PDF.AcroFields.VerifySignature("supvsign")
+    $UserSignature = $PDF.AcroFields.VerifySignature("usersign")
 
     [PSCUstomObject] @{
     
