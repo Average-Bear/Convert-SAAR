@@ -22,6 +22,7 @@ try {
 catch {
 
    Write-Error $_
+   Break
 }
 
 #Retrieve files from specified SAAR directory
