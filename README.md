@@ -1,2 +1,2 @@
 # Convert-SAAR
-Parses SAAR Form 2875 for user account creation data.
+Parses SAAR Form 2875 for basic user account creation data.
