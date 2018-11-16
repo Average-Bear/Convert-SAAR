@@ -10,7 +10,7 @@
     Date: 11/10/2018
     Version: 1.0
 
-    Notes: PDF document(s) must not be (SECURED). Requires iTextSharp library.
+    Notes: Requires iTextSharp library.
 #>
 
 #Load iTextSharp .NET library
