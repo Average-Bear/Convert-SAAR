@@ -45,10 +45,10 @@ foreach($File in $Files) {
     [PSCUstomObject] @{
     
         #User first name
-        Firstname = $Name[0].Trim()
+        Firstname = $Name[1].Trim()
 
         #User last name
-        LastName = $Name[1].Trim()
+        LastName = $Name[0].Trim()
 
         #User middle initial
         MiddleIn = $Name[2].Trim()
